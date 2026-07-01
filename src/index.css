@@ -1,0 +1,127 @@
+/* Body Container */
+.user-input-form {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.headerImg {
+  width: 14%;
+  display: flex;
+}
+
+nav {
+  display: flex;
+  border: 1px solid purple;
+}
+
+/* Form */
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* Labels */
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs */
+.form input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form input:focus {
+  border-color: #7c3aed;
+}
+
+/* Button */
+.btn {
+  grid-column: 1 / -1;
+  padding: 0.9rem;
+  background: linear-gradient(90deg, #672280, #a626d3);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Meme Section */
+.meme {
+  position: relative;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Image */
+.boy {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Meme Text */
+.meme span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  text-align: center;
+
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000;
+}
+
+.top {
+  top: 20px;
+}
+
+.bottom {
+  bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .meme span {
+    font-size: 1.5rem;
+  }
+}
