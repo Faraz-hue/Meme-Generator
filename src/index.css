@@ -7,13 +7,13 @@
 }
 
 .headerImg {
-  width: 14%;
+  width: 100px;
+  height: auto;
   display: flex;
 }
 
 nav {
   display: flex;
-  border: 1px solid purple;
 }
 
 /* Form */
@@ -124,4 +124,17 @@ nav {
   .meme span {
     font-size: 1.5rem;
   }
+}
+
+.btnCharacter {
+  padding: 0.9rem;
+  background: linear-gradient(90deg, #672280, #d0d326);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+
 }
